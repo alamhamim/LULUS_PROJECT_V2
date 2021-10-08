@@ -1,0 +1,43 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="LULUS Project" parallel="tests">
+    <test name="LULUS Chrome">
+        <parameter name="browserName" value="chrome"></parameter>
+        <parameter name="url" value="ipAddress"></parameter>
+        <parameter name="key" value="parallel"></parameter>
+        <packages>
+            <package name="com.tests"></package>
+        </packages>
+    </test>
+    <test name="LULUS Firefox">
+        <parameter name="browserName" value="fireFox"></parameter>
+        <parameter name="url" value="ipAddress"></parameter>
+        <parameter name="key" value="parallel"></parameter>
+        <packages>
+            <package name="com.tests"></package>
+        </packages>
+    </test>
+    <test name="LULUS opera">
+        <parameter name="browserName" value="opera"></parameter>
+        <parameter name="url" value="ipAddress"></parameter>
+        <parameter name="key" value="parallel"></parameter>
+        <packages>
+            <package name="com.tests"></package>
+        </packages>
+    </test>
+    <test name="LULUS safari">
+        <parameter name="browserName" value="safari"></parameter>
+        <parameter name="url" value="ipAddress"></parameter>
+        <parameter name="key" value="parallel"></parameter>
+        <packages>
+            <package name="com.tests"></package>
+        </packages>
+    </test>
+    <test name="LULUS edge">
+        <parameter name="browserName" value="edge"></parameter>
+        <parameter name="url" value="ipAddress"></parameter>
+        <parameter name="key" value="parallel"></parameter>
+        <packages>
+            <package name="com.tests"></package>
+        </packages>
+    </test>
+</suite>

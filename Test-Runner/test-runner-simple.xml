@@ -3,6 +3,7 @@
     <test name="SimpleTest">
         <parameter name="browserName" value="chrome"></parameter>
         <parameter name="url" value="https://qa.lulus.com/"></parameter>
+        <parameter name="key" value="simple"></parameter>
         <packages>
             <package name="com.tests"></package>
         </packages>

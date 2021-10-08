@@ -22,13 +22,13 @@ public class SmokeTest extends BaseTest{
     }
 
 
-    @Test(dependsOnMethods = "homePageTitle", priority = 2)
+    @Test(priority = 2, dependsOnMethods = {"homePageTitleTest"})
     public void clickOnWinterTest() {
         homePage = new HomePage(driver);
         winterPage = homePage.clickOnWinterClothes();
     }
 
-    @Test(dependsOnMethods = "clickOnWinterTest", priority = 3)
+    @Test(priority = 3)
     public void verifyWinterTestSubMenu() {
         winterPage = new WinterPage(driver);
         winterPage.verifyTheSubMenus();
