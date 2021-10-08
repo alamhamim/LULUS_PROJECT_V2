@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="LULUS Project">
+    <test name="SimpleTest">
+        <parameter name="browserName" value="chrome"></parameter>
+        <parameter name="url" value="https://qa.lulus.com/"></parameter>
+        <packages>
+            <package name="com.tests"></package>
+        </packages>
+    </test>
+</suite>
